@@ -6,7 +6,7 @@ public class MoveWords{
     public static final int GANA = 1;
     public static final int PIERDE = 2;
 
-    private static final String[] validMoves = {"TIJERAS", "PAPEL", "PIEDRA", "LAGARTO", "SPOCK"};
+    private static final String[] validMoves = {"TIJERAS", "PAPEL", "PIEDRA", "TORITO", "SEPIA"};
     private static final String[] validCommands = {"SALIR", "HELP"};
 
     private Random rnd;
@@ -82,12 +82,12 @@ public class MoveWords{
 	    		return GANA;
 	    	}	    	
 	    }
-	    else if(first_i==3) {//lagarto
+	    else if(first_i==3) {//torito
 	    	if(second_i==1 || second_i==4) {
 	    		return GANA;
 	    	}	    	
 	    }
-	    else if(first_i==4) {//spock
+	    else if(first_i==4) {//sepia
 	    	if(second_i==0 || second_i==2) {
 	    		return GANA;
 	    	}	    	
